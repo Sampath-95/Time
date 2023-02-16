@@ -21,3 +21,4 @@ if btn:
   j=1
   for r in li:
     st.write(str(j)+'. '+r)
+    j+=1
