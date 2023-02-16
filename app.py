@@ -17,9 +17,3 @@ if btn:
   st.header("Latest Stories")
   for r in rlines:
     st.write(r.text)
-if(flag==1):
-  flag=0
-  if(btn):
-    st.write("Hello")
-
-
