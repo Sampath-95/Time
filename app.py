@@ -10,10 +10,16 @@ s = soup.find('main', class_= 'homepage-wrapper')
 rb=s.find('div',class_="partial latest-stories")
 
 rlines=rb.find_all('li')
-
-if st.button('Get Stories'):
+flag=0
+btn=st.button('Get Stories')
+if btn:
+  flag=1
   st.header("Latest Stories")
   for r in rlines:
     st.write(r.text)
+if(flag==1):
+  flag=0
+  if(btn):
+    st.write("Hello")
 
 
