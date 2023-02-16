@@ -10,6 +10,6 @@ s = soup.find('main', class_= 'homepage-wrapper')
 rb=s.find('div',class_="partial latest-stories")
 
 rlines=rb.find_all('li')
-
+st.header("Latest Stories")
 for r in rlines:
   st.write(r.text)
