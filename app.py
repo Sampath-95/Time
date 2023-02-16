@@ -12,8 +12,11 @@ rb=s.find('div',class_="partial latest-stories")
 rlines=rb.find_all('li')
 flag=0
 btn=st.button('Get Stories')
+li=[]
+for r in rlines:
+  li.append(r.text)
 if btn:
   flag=1
   st.header("Latest Stories")
-  for r in rlines:
-    st.write(r.text)
+  for r in li:
+    st.write(r)
