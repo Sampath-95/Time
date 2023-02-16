@@ -18,9 +18,13 @@ lines = leftbar.find_all('li')
 rb=s.find('ul', class_='tout__list items swipe-h')
 
 rlines=rb.find_all('li')
+col1, col2 = st.columns(2)
 
-for r in rlines:
-  st.write(r.text)
-for line in lines:
-	st.write(line.text)
+with col1:
+	for r in lines:
+		st.write(r.text)
+
+with col2:
+	for line in rlines:
+		st.write(line.text)
 
