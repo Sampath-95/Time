@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-
+import streamlit as st
 r = requests.get('https://time.com/')
 
 soup = BeautifulSoup(r.content, 'html.parser')
