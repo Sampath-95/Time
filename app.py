@@ -18,5 +18,6 @@ for r in rlines:
 if btn:
   flag=1
   st.header("Latest Stories")
+  j=1
   for r in li:
-    st.write(r)
+    st.write(str(j)+'. '+r)
